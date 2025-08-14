@@ -24,6 +24,10 @@ slot = (screen_size / 3) - square * 0.85
 pg = pygame
 order = []
 
+# Window icon
+icon = pygame.image.load('icon.png')
+pygame.display.set_icon(icon)
+
 pg.init()
 screen = pg.display.set_mode((screen_size, screen_size))
 pg.display.set_caption("simon says")
